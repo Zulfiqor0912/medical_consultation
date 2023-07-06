@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/button_sign_in_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="26dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="8dp"
+        android:src="@drawable/baseline_arrow_back_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/appCompatImageView"
+        android:layout_width="126dp"
+        android:layout_height="126dp"
+        android:src="@drawable/medic_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView"
+        style="@style/nunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Login to Your Account"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/email_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="26dp"
+        android:background="@drawable/bg_input"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_email_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_email_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="77dp"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Email"
+            android:textColorHint="#68000000"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView2"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/password_container"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="26dp"
+        android:background="@drawable/bg_input"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@+id/email_container">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_lock_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input_password_sign_in"
+            android:layout_width="0dp"
+            android:layout_height="77dp"
+            android:layout_marginHorizontal="10dp"
+            android:hint="Password"
+            android:textColorHint="#68000000"
+            android:inputType="textPassword"
+            android:paddingVertical="10dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appCompatImageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/textBlue"
+        app:buttonTint="@color/textBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password_container" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView3"
+        style="@style/nunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="Remember me"
+        android:textColor="@color/textBlue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkbox_sign_in"
+        app:layout_constraintStart_toEndOf="@+id/checkbox_sign_in"
+        app:layout_constraintTop_toTopOf="@+id/checkbox_sign_in" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_sign_in"
+        style="@style/nunito"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_button"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView3" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_forgot_password"
+        style="@style/nunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:text="Forgot password?"
+        android:textColor="@color/textBlue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign_in" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/appCompatTextView2"
+        style="@style/nunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or continue with"
+        android:textColor="#BA000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_google"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_forgot_password" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sign_up_facebook"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button2"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        android:src="@drawable/facebook"
+        app:layout_constraintBottom_toTopOf="@+id/sign_up_al"
+        app:layout_constraintEnd_toStartOf="@+id/sign_up_google"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatTextView2" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sign_up_google"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button2"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        android:src="@drawable/google"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_up_facebook"
+        app:layout_constraintEnd_toStartOf="@+id/sign_up_apple"
+        app:layout_constraintStart_toEndOf="@+id/sign_up_facebook"
+        app:layout_constraintTop_toTopOf="@+id/sign_up_facebook"
+        tools:layout_editor_absoluteY="646dp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sign_up_apple"
+        android:layout_width="86dp"
+        android:layout_height="56dp"
+        android:background="@drawable/bg_button2"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:padding="12dp"
+        android:src="@drawable/apple"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_up_facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sign_up_google"
+        app:layout_constraintTop_toTopOf="@+id/sign_up_facebook" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/sign_up_al"
+        style="@style/nunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already have an a account?"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_google" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/text_sign_in_to_sign_up"
+        style="@style/nunito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackgroundBorderless"
+        android:text="Sign up"
+        android:textColor="@color/textBlue"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/sign_up_al"
+        app:layout_constraintStart_toEndOf="@id/sign_up_al"
+        app:layout_constraintTop_toTopOf="@id/sign_up_al" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

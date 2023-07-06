@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="nunito">
+        <item name="fontFamily">@raw/nunito_bold</item>
+    </style>
+</resources>

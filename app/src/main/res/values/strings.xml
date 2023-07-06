@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Medical consultation</string>
+    <string name="intro_"><![CDATA[The best online doctor appointment &\n consultation app of the century for your\nhealth and medical needs!]]></string>
+    <string name="lets">Let\'s start living\nhealthy and well\nwith us right now!</string>
+    <string name="second_str"><![CDATA[Health checks &\nconsultations easily\nanywhere anytime]]></string>
+    <string name="first_str"><![CDATA[Thousands of\ndoctors & experts to\nhelp your health!]]></string>
+</resources>

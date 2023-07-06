@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "743196683669",
+    "project_id": "medical-center-daa11",
+    "storage_bucket": "medical-center-daa11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743196683669:android:94a52cfe4da462d47a1a9c",
+        "android_client_info": {
+          "package_name": "uz.gita.medicalconsultation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0iu-sqpjUi1v0kQd7d5LU4nboE-GhhnY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

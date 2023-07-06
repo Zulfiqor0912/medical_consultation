@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashScreen">
+
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.splash.SplashScreen"
+        android:label="SplashScreen"
+        tools:layout="@layout/screen_splash">
+        <action
+            android:id="@+id/action_splashScreen_to_onBoardingScreen"
+            app:destination="@id/onBoardingScreen"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.onboarding.OnBoardingScreen"
+        android:label="OnBoardingScreen"
+        tools:layout="@layout/screen_zero_intro">
+        <action
+            android:id="@+id/action_onBoardingScreen_to_introParent"
+            app:destination="@id/introParent"
+            app:popUpTo="@id/onBoardingScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/introParent"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.introparent.IntroParentScreen"
+        android:label="IntroParent"
+        tools:layout="@layout/screen_intros">
+        <action
+            android:id="@+id/action_introParent_to_letsScreen"
+            app:destination="@id/letsScreen"
+            app:popUpTo="@id/introParent"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/letsScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.lets.LetsScreen"
+        android:label="LetsScreen"
+        tools:layout="@layout/screen_lets">
+        <action
+            android:id="@+id/action_letsScreen_to_signUpScreen"
+            app:destination="@id/signUpScreen" />
+        <action
+            android:id="@+id/action_letsScreen_to_signInScreen"
+            app:destination="@id/signInScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.signup.SignUpScreen"
+        android:label="SignUpScreen"
+        tools:layout="@layout/screen_sign_up" >
+        <action
+            android:id="@+id/action_signUpScreen_to_signInScreen"
+            app:destination="@id/signInScreen"
+            app:popUpTo="@id/signUpScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpScreen_to_profileScreen"
+            app:destination="@id/profileScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.signin.SignInScreen"
+        android:label="SignInScreen"
+        tools:layout="@layout/screen_sign_in">
+        <action
+            android:id="@+id/action_signInScreen_to_signUpScreen"
+            app:destination="@id/signUpScreen"
+            app:popUpTo="@id/signInScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signInScreen_to_nestedScreen"
+            app:destination="@id/nestedScreen"
+            app:popUpTo="@id/signInScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/fingerScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.finger.FingerScreen"
+        android:label="FingerScreen"
+        tools:layout="@layout/screen_finger">
+        <action
+            android:id="@+id/action_fingerScreen_to_nestedScreen"
+            app:destination="@id/nestedScreen"
+            app:popUpTo="@id/fingerScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.profile.ProfileScreen"
+        android:label="ProfileScreen"
+        tools:layout="@layout/screen_profile">
+        <action
+            android:id="@+id/action_profileScreen_to_fingerScreen"
+            app:destination="@id/fingerScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.appointment.AppointmentScreen"
+        android:label="AppointmentScreen"
+        tools:layout="@layout/screen_appointment"/>
+    <fragment
+        android:id="@+id/articlesScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.articles.ArticlesScreen"
+        android:label="ArticlesScreen"
+        tools:layout="@layout/screen_articles"/>
+    <fragment
+        android:id="@+id/historyScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.history.HistoryScreen"
+        android:label="HistoryScreen"
+        tools:layout="@layout/screen_history"/>
+    <fragment
+        android:id="@+id/profile2Screen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.profile2.Profile2Screen"
+        android:label="Profile2Screen"
+        tools:layout="@layout/screen_profile2"/>
+    <fragment
+        android:id="@+id/nestedScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.homeParent.NestedScreen"
+        android:label="NestedScreen"
+        tools:layout="@layout/screen_parent"/>
+    <fragment
+        android:id="@+id/homeScreen"
+        android:name="uz.gita.medicalconsultation.presentation.ui.screens.home.HomeScreen"
+        android:label="HomeScreen"
+        tools:layout="@layout/screen_home"/>
+</navigation>
